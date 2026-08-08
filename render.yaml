@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: abtalks
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: BREETH_API_KEY
+        sync: false
+      - key: BREETH_GROUP_ID
+        value: abtalks-ananya
